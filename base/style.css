@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 
+CSS Flexible Box Layout
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+*/ 
+
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0;
+}
+
+.big-text {
+    font-size: 72px;
+    text-align: center;
+    font-family: sans-serif;    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    height: 25%;
+    padding: 16px;
+    background: white;
+    color: black;
+}
+
+.btn {
+    border: none;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.btn:hover {
+    background: yellow;
+}
+
+.btn:active {
+    background: blue;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
