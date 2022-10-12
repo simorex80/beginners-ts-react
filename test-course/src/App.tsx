@@ -1,6 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'objects/objects';
+import 'primitives/primitives';
+import 'functions/functions';
+import 'intersection/intersection';
+import 'literal/literal';
+import 'enums/enums';
+import 'assertions/assertions';
+import 'index-signature/index-signature';
+import 'generics/generics';
+import 'utility-types/utility-types';
 
 function App() {
   return (

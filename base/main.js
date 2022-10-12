@@ -45,9 +45,9 @@ const eventLeave = (id) => {
 // Template literals (Template strings)
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 
-const name = "simone";
+const firstname = "simone";
 // const hello = "hello " + name + ", how are you?";
-const hello = `hello ${name}, how are you?`;
+const hello = `hello ${firstname}, how are you?`;
 
 // Logical AND (&&) Logical OR (||)
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND
