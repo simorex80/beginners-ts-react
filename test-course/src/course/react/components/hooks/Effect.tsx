@@ -15,6 +15,9 @@ interface Result {
 };
 
 function Effect() {
+
+    console.log(`hooks:effect::re-render`);
+
     const [query, setQuery] = useState("react");
     const [search, setSearch] = useState("");
     const [data, setData] = useState<Result>();

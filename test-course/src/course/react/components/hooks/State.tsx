@@ -3,12 +3,12 @@
 
 function State() {
 
-    console.log("hooks:state::re-render");
+    console.log(`hooks:state::re-render`);
 
     let millisecond: number = Date.now();
 
     function changeValues() {
-        console.log(`hooks:state::changeName::old_millisecond ${millisecond}`);
+        console.log(`hooks:state::changeName::old_millisecond: ${millisecond}`);
         millisecond = Date.now();
     }
 
@@ -22,7 +22,7 @@ function State() {
 
 // function State() {
 
-//     console.log("hooks:state::re-render");
+//     console.log(`hooks:state::re-render`);
 
 //     let [millisecond, setMillisecond] = useState<number>(Date.now());
 //     let [date, setDate] = useState<Date>(new Date());

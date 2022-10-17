@@ -20,6 +20,7 @@ import Header from 'course/react/components/Header';
 import State from 'course/react/components/hooks/State';
 import Effect from 'course/react/components/hooks/Effect';
 import Ref from 'course/react/components/hooks/Ref';
+import Context from 'course/react/components/Context';
 
 function App() {
 
@@ -47,6 +48,8 @@ function App() {
         <Effect />
         <h2>Ref</h2>
         <Ref />
+        <h2>Context</h2>
+        <Context />
       </div>
     </div>
   );

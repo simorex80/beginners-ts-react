@@ -14,6 +14,9 @@ interface Result {
 };
 
 function Ref() {
+
+    console.log(`hooks:ref::re-render`);
+
     const queryRef = useRef<HTMLInputElement>(null);
     const [search, setSearch] = useState("");
     const [data, setData] = useState<Result>();
@@ -33,10 +36,9 @@ function Ref() {
 
     const handleSearch = () => {
         if (queryRef.current) {
-            const value = queryRef.current.value;
-            setSearch(value);
+            setSearch(queryRef.current.value);
         }
-        console.log(divRef.current?.getBoundingClientRect());
+        console.log(`hooks:ref::re-render::search: ${divRef.current?.getBoundingClientRect()}`);
     };
 
     return (
