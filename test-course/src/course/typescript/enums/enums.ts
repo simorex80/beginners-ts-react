@@ -1,7 +1,5 @@
 // https://www.tutorialsteacher.com/typescript/typescript-enum
 
-import { number } from "literal/literal";
-
 enum Position {
     Top = "top",
     Bottom = "bottom",
@@ -77,5 +75,5 @@ if (status === Status.NotActive) {
 // https://www.htmlgoodies.com/javascript/typescript-string-literals-vs-enums/
 // https://blog.logrocket.com/typescript-string-enums-guide/
 
-export { number, getNumberFromPosition, position }
+export { getNumberFromPosition, position }
 export type { PositionLiteral, Square }
