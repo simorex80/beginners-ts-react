@@ -23,6 +23,8 @@ import Ref from 'course/react/components/hooks/Ref';
 import Context from 'course/react/components/hooks/Context';
 import Event from 'course/react/components/events/Event';
 import CustomHook from 'course/react/components/events/CustomHook';
+import Controlled from 'course/react/components/input/Controlled';
+import Uncontrolled from 'course/react/components/input/Uncontrolled';
 
 function App() {
 
@@ -60,6 +62,14 @@ function App() {
         <h2>Custom hook</h2>
         <CustomHook />
       </div>
+      <div>
+        <h1>Input</h1>
+        <h2>Controlled</h2>
+        <Controlled />
+        <h2>Uncontrolled</h2>
+        <Uncontrolled />
+      </div>
+      <br />
     </div>
   );
 }
