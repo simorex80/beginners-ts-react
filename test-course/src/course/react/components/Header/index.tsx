@@ -1,8 +1,8 @@
+// https://en.reactjs.org/docs/faq-structure.html
+
 import { ReactNode } from 'react';
 import Paragraph from './Paragraph';
 import Link from './Link';
-
-// https://en.reactjs.org/docs/faq-structure.html
 
 interface HeaderProps {
     children: ReactNode;

@@ -4,9 +4,9 @@
 // https://www.geeksforgeeks.org/reactjs-usecontext-hook/
 
 import React, { useState } from "react";
-import SubComponentA from "course/react/components/Context/SubComponentA";
-import SubComponentB from "course/react/components/Context/SubComponentB";
-import SubComponentC from "course/react/components/Context/SubComponentC";
+import SubComponentA from "course/react/components/hooks/Context/SubComponentA";
+import SubComponentB from "course/react/components/hooks/Context/SubComponentB";
+import SubComponentC from "course/react/components/hooks/Context/SubComponentC";
 
 interface ColorContextProps {
     foreground: string;
@@ -48,7 +48,6 @@ function Context() {
             <SubComponentC />
         </ColorContext.Provider>
     </div>;
-
 
 }
 

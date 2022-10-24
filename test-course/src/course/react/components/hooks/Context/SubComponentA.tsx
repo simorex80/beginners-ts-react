@@ -1,17 +1,19 @@
-
 import { useContext } from "react";
-import { ColorContext } from ".";
+import { ColorContext } from "course/react/components/hooks/Context";
 
-function SubComponentC() {
+function SubComponentA() {
 
     const colorContextProps = useContext(ColorContext);
 
     return <div style={{
+        height: "10%",
+        width: "10%",
+        margin: "auto",
         background: colorContextProps.background,
         color: colorContextProps.foreground
     }}>
-        ComponentC
+        ComponentA
     </div>;
 }
 
-export default SubComponentC;
+export default SubComponentA;

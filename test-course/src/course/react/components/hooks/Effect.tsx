@@ -32,9 +32,13 @@ function Effect() {
         } else {
             setData(undefined);
         }
+        // 1 - Could return a function to "unmount" the effect (ex. remove event listener, reset window elements, ...
+        // return () => {
+        //     window.removeEventListener("keyup", handleKeyUp);
+        // };
     },
-        // 1 - Could also be applied to props of component
-        // 2 - Could be called with [] deps for "initialize" the component after the first rendering
+        // 2 - Could also be applied to props of component
+        // 3 - Could be called with [] deps for "initialize" the component after the first rendering
         [search]
     );
 

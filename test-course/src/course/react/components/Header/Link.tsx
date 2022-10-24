@@ -1,5 +1,3 @@
-// https://en.reactjs.org/docs/faq-structure.html
-
 function Link() {
     return <a
         className="App-link"
