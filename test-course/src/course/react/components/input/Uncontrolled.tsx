@@ -3,9 +3,7 @@
 // https://www.geeksforgeeks.org/controlled-vs-uncontrolled-components-in-reactjs/
 // https://blog.logrocket.com/controlled-vs-uncontrolled-components-in-react/
 
-import { FormEvent, useRef, useState } from "react";
-
-type Sex = "" | "M" | "F";
+import { FormEvent, useRef } from "react";
 
 function Uncontrolled() {
 
@@ -26,6 +24,8 @@ function Uncontrolled() {
         surnameElement.value = "";
         sexElement.value = "";
     };
+
+    // type Sex = "" | "M" | "F";
 
     // const handleSubmit = (event: FormEvent) => {
     //     event.preventDefault();

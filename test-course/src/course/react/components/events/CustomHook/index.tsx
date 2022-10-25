@@ -4,7 +4,7 @@
 // https://www.robinwieruch.de/react-custom-hook/
 
 import { useState } from "react";
-import useEventListener from "./EventListenerHook";
+import useEventListener from "course/react/components/events/CustomHook/EventListenerHook";
 
 function CustomHook() {
 

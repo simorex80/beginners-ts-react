@@ -25,6 +25,7 @@ import Event from 'course/react/components/events/Event';
 import CustomHook from 'course/react/components/events/CustomHook';
 import Controlled from 'course/react/components/input/Controlled';
 import Uncontrolled from 'course/react/components/input/Uncontrolled';
+import ForwardRef from 'course/react/components/ref/ForwardRef';
 
 function App() {
 
@@ -68,6 +69,11 @@ function App() {
         <Controlled />
         <h2>Uncontrolled</h2>
         <Uncontrolled />
+      </div>
+      <div>
+        <h1>Ref</h1>
+        <h2>ForwardRef</h2>
+        <ForwardRef />
       </div>
       <br />
     </div>
