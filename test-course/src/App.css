@@ -41,3 +41,24 @@ body {
     transform: rotate(360deg);
   }
 }
+
+nav.menu {
+  width: 50%;
+  margin: auto;
+}
+nav.menu > ul {
+  padding-left: 0px;
+  background-color: #61dafb;
+  text-align: center;
+}
+nav.menu > ul > li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav.menu > ul > li:hover {
+  background-color: #2779BF;
+}
+nav.menu > ul > li > a {
+  color: black;
+  text-decoration: none;
+}
