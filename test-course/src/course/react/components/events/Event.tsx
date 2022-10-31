@@ -1,5 +1,6 @@
 // https://reactjs.org/docs/handling-events.html
 
+// https://www.w3schools.com/react/react_events.asp
 // https://www.knowledgehut.com/blog/web-development/handling-react-events-guide
 // https://www.javatpoint.com/react-events
 

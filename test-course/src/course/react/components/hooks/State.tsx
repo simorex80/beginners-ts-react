@@ -1,5 +1,8 @@
 // https://reactjs.org/docs/hooks-state.html
 
+// https://www.w3schools.com/react/react_usestate.asp
+// https://www.geeksforgeeks.org/what-is-usestate-in-react/
+// https://dmitripavlutin.com/react-usestate-hook-guide/
 // https://www.developerway.com/posts/react-re-renders-guide
 
 function State() {

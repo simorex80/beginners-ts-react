@@ -1,5 +1,8 @@
 // https://reactjs.org/docs/hooks-effect.html
 
+// https://www.w3schools.com/react/react_useeffect.asp
+// https://www.geeksforgeeks.org/reactjs-useeffect-hook/
+// https://dmitripavlutin.com/react-useeffect-explanation/
 // https://www.freecodecamp.org/italian/news/hook-useeffect-react/
 // https://medium.com/webeetle/guida-ai-react-hooks-parte-1-510693ea60f8
 // https://www.robinwieruch.de/react-hooks-fetch-data/

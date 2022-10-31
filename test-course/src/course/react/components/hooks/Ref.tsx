@@ -1,7 +1,9 @@
 // https://reactjs.org/docs/hooks-reference.html#useref
 
-// https://medium.com/trabe/react-useref-hook-b6c9d39e2022
+// https://www.w3schools.com/react/react_useref.asp
+// https://www.geeksforgeeks.org/react-js-useref-hook/
 // https://dmitripavlutin.com/react-useref-guide/
+// https://medium.com/trabe/react-useref-hook-b6c9d39e2022
 
 import { useEffect, useRef, useState } from "react";
 

@@ -1,16 +1,16 @@
 
 import { functionHello } from 'course/react/tsx/hello';
-import Hello from 'course/react/components/Hello';
-import HelloEx from 'course/react/components/HelloEx';
+import Hello from 'course/react/components/structure/Hello';
+import HelloEx from 'course/react/components/structure/HelloEx';
 import State from 'course/react/components/hooks/State';
 import Effect from 'course/react/components/hooks/Effect';
 import Ref from 'course/react/components/hooks/Ref';
 import Context from 'course/react/components/hooks/Context';
 import Event from 'course/react/components/events/Event';
 import CustomHook from 'course/react/components/events/CustomHook';
-import Controlled from 'course/react/components/input/Controlled';
-import Uncontrolled from 'course/react/components/input/Uncontrolled';
-import ForwardRef from 'course/react/components/ref/ForwardRef';
+import Controlled from 'course/react/form/Controlled';
+import Uncontrolled from 'course/react/form/Uncontrolled';
+import ForwardRef from 'course/react/forward-ref/ForwardRef';
 
 const Course = () => {
 
@@ -46,7 +46,7 @@ const Course = () => {
                 <CustomHook />
             </div>
             <div>
-                <h1>Input</h1>
+                <h1>Form</h1>
                 <h2>Controlled</h2>
                 <Controlled />
                 <h2>Uncontrolled</h2>

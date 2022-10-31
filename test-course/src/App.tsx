@@ -15,11 +15,16 @@ import 'course/typescript/utility-types/utility-types';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Outlet, Link } from "react-router-dom";
 
-import Header from 'course/react/components/Header';
+import Header from 'course/react/components/structure/Header';
 
 import Credits from 'course/pages/Credits';
 import About from 'course/pages/About';
 import Course from 'course/pages/Course';
+
+// https://reactrouter.com/en/main
+
+// https://www.w3schools.com/react/react_router.asp
+// https://www.geeksforgeeks.org/reactjs-router/
 
 function App() {
   return <BrowserRouter>

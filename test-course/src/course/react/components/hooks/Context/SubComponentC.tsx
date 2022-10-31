@@ -3,6 +3,7 @@ import { ColorContext } from "course/react/components/hooks/Context";
 
 function SubComponentC() {
 
+    // C.CONSUMING THE CONTEXT
     const colorContextProps = useContext(ColorContext);
 
     return <div style={{

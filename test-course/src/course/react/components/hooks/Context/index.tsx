@@ -1,7 +1,8 @@
 // https://reactjs.org/docs/hooks-reference.html#usecontext
 
-// https://dmitripavlutin.com/react-context-and-usecontext/
+// https://www.w3schools.com/react/react_usecontext.asp
 // https://www.geeksforgeeks.org/reactjs-usecontext-hook/
+// https://dmitripavlutin.com/react-context-and-usecontext/
 
 import React, { useState } from "react";
 import SubComponentA from "course/react/components/hooks/Context/SubComponentA";
@@ -13,6 +14,7 @@ interface ColorContextProps {
     background: string;
 };
 
+// A. CREATING THE CONTEXT
 export const ColorContext = React.createContext<ColorContextProps>({
     foreground: "#FFFFFF",
     background: "#000000"
@@ -42,6 +44,7 @@ function Context() {
         <button type="button" onClick={handleChangeColor}>
             Change Color
         </button>
+        {/* B. PROVIDING THE CONTEXT */}
         <ColorContext.Provider value={colorContextProps}>
             <SubComponentA />
             <SubComponentB />
