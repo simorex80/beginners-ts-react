@@ -1,3 +1,6 @@
+// https://www.typescriptlang.org/docs/handbook/2/typeof-types.html
+// https://www.typescriptlang.org/docs/handbook/2/types-from-types.html
+
 // https://www.tutorialsteacher.com/typescript/type-assertion
 
 let name = "Simone";
@@ -9,12 +12,12 @@ console.log(`assertions::age.typeof: ${typeof age}`); // number
 name = "Elisa";
 age = 3;
 
-// Required on functions parameter, inference on return (bad practice)
+// Required on functions parameter, inference on return (bad practice) (best specify type)
 
 // const sum = (a: number, b: number): number => {
 const sum = (a: number, b: number) => {
     return a + b;
-}
+};
 
 // !!! BAD BAD BAD PRACTICE !!!
 
@@ -39,12 +42,12 @@ const user: SimpleUser = {
     email: "ciao@google.com",
     // @ts-ignore
     phone: 12345678
-}
+};
 
 const print = (userPhone: UserPhone) => {
     console.log(`assertions::userPhone.print: ${userPhone.phone}`);
-}
+};
 
 print(user as unknown as UserPhone);
 
-export { sum }
+export { sum };

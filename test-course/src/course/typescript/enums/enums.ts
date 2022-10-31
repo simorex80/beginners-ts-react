@@ -1,3 +1,5 @@
+// https://www.typescriptlang.org/docs/handbook/enums.html
+
 // https://www.tutorialsteacher.com/typescript/typescript-enum
 
 enum Position {
@@ -22,7 +24,7 @@ const getNumberFromPosition = (position: Position): number => {
         case Position.Right:
             return -2;
     }
-}
+};
 
 enum Status {
     NotActive = 0,
@@ -38,7 +40,7 @@ type PositionLiteral = `${Position}`;
 // From string to enum
 
 const asEnum = <
-    T extends { [key: string]: string },
+    T extends { [key: string]: string; },
     K extends keyof T & string
 >(
     enumObject: T,
@@ -75,5 +77,5 @@ if (status === Status.NotActive) {
 // https://www.htmlgoodies.com/javascript/typescript-string-literals-vs-enums/
 // https://blog.logrocket.com/typescript-string-enums-guide/
 
-export { getNumberFromPosition, position }
-export type { PositionLiteral, Square }
+export { getNumberFromPosition, position };
+export type { PositionLiteral, Square };

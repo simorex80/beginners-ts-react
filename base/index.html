@@ -9,15 +9,17 @@
 <body>
     <div class="main-container">
         <div class="card">
-            <span class="big-text" id="counter">0</span>
+            <span class="big-text" id="counter"/>
             <div class="btn-container">
                 <button class="btn" onclick="plus()">+</button>
                 <button class="btn" onclick="minus()">-</button>
             </div>
         </div>
+        <!--Via Events-->
         <div class="card" onmouseenter="eventEnter('in-event-html')" onmouseleave="eventLeave('in-event-html')">
             <span class="big-text" id="in-event-html">out</span>
         </div>
+        <!--Via listener-->
         <div class="card" id="in-event-js-card">
             <span class="big-text" id="in-event-js">out</span>
         </div>

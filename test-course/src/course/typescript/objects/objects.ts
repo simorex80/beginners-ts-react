@@ -1,3 +1,5 @@
+// https://www.typescriptlang.org/docs/handbook/2/objects.html
+
 // https://www.tutorialsteacher.com/typescript/typescript-interface
 
 interface SimpleUser {
@@ -11,7 +13,7 @@ interface SimpleUser {
     address?: {
         street: string,
         number: string;
-    }
+    };
 }
 
 // https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript
@@ -19,7 +21,7 @@ interface SimpleUser {
 // type SimpleUser = {
 //     name: string;
 //     surname: string;
-//     // welcome: () => number; // arrow function
+//     // welcome: () => string; // arrow function
 //     welcome(): string;
 // }
 
@@ -31,13 +33,15 @@ const simpleUser1: SimpleUser = {
     welcome: function (): string {
         return `hello ${this.name}, how are you?`;
     }
-}
+};
 
 // Optional property 
 
 // console.log(objects::simpleUser1.address ? simpleUser1.address.number : "");
 // console.log(objects::simpleUser1.address && simpleUser1.address.number);
 console.log(`objects::simpleUser1.address?.number: ${simpleUser1.address?.number}`);
+const address_number = simpleUser1.address && simpleUser1.address.number;
+console.log(`objects::simpleUser1.address?.number: ${address_number}`);
 
 // https://www.typescriptlang.org/docs/handbook/2/objects.html
 
@@ -56,14 +60,17 @@ const user1: User = {
     age: function (): number {
         return (this.year_of_birth) ? (new Date().getFullYear() - this.year_of_birth) : 0;
     }
-}
+};
+console.log(`objects::user1.year_of_birth: ${user1.year_of_birth}`);
 
 // Spread object creation
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
 const user2: User = {
     ...user1,
     year_of_birth: 1980,
-}
+};
+console.log(`objects::user2.year_of_birth: ${user1.year_of_birth}`);
 
-export { simpleUser1, user1, user2 }
-export type { SimpleUser, User }
+export { simpleUser1, user1, user2 };
+export type { SimpleUser, User };

@@ -1,8 +1,11 @@
+// https://www.typescriptlang.org/docs/handbook/2/functions.html
+
 // https://www.tutorialsteacher.com/typescript/typescript-function
+// https://www.tutorialsteacher.com/typescript/arrow-function
 
 const sum = (a: number, b?: number): number => {
     return b ? a + b : a;
-}
+};
 
 interface ComponentProps {
     a: number;
@@ -16,9 +19,9 @@ const component: ComponentProps = {
     sum: function (): number {
         return sum(this.a, this.b);
     }
-}
+};
 
 console.log(`functions::component.sum: ${component.sum()}`);
 
-export { sum, component }
-export type { ComponentProps }
+export { sum, component };
+export type { ComponentProps };

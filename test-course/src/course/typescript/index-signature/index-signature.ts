@@ -28,7 +28,7 @@ const userDictionary: UserDictionary = {
         name: "Sergio",
         surname: "Neri",
     }
-}
+};
 
 console.log(`index-signature::userDictionary.h3034rnfd: ${JSON.stringify(userDictionary)}`);
 console.log(`index-signature::userDictionary.h3034rnfd: ${JSON.stringify(userDictionary.admin)}`);
@@ -49,10 +49,10 @@ enum WeekDay {
 interface Statistics {
     views: {
         [day in WeekDay]: number;
-    }
+    };
     enabled?: {
         [day in WeekDay]: boolean;
-    }
+    };
 }
 
 const statistics: Statistics = {
@@ -65,9 +65,9 @@ const statistics: Statistics = {
         [WeekDay.Saturday]: 1,
         [WeekDay.Sunday]: 0
     }
-}
+};
 
 console.log(`index-signature::statistics: ${JSON.stringify(statistics)}`);
 
-export { userDictionary, statistics }
-export type { User, UserDictionary, WeekDay, Statistics }
+export { userDictionary, statistics };
+export type { User, UserDictionary, WeekDay, Statistics };

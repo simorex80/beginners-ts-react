@@ -1,3 +1,5 @@
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types
+
 // https://www.typescripttutorial.net/typescript-tutorial/typescript-string-literal-types/
 
 type Position = "top" | "bottom" | "left" | "right";
@@ -14,7 +16,7 @@ interface Square {
 
 const square: Square = {
     position: "bottom"
-}
+};
 
-export { position, number, height, square }
-export type { Position, FirstTenNumbers, Height, Square }
+export { position, number, height, square };
+export type { Position, FirstTenNumbers, Height, Square };

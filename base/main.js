@@ -73,6 +73,7 @@ const obj3 = {...obj1, ...obj2};
 
 window.onload = () => {
     updateCounter();
+
     document.getElementById("in-event-js-card").addEventListener("mouseenter", (event) => eventEnter("in-event-js"));
     document.getElementById("in-event-js-card").addEventListener("mouseleave", (event) => eventLeave("in-event-js"));
 

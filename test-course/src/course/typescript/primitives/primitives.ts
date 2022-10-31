@@ -1,3 +1,5 @@
+// https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+
 // https://www.tutorialsteacher.com/typescript/typescript-number
 // https://www.tutorialsteacher.com/typescript/typescript-string
 // https://www.tutorialsteacher.com/typescript/typescript-boolean
@@ -23,4 +25,4 @@ let documents: Array<string> = ["passaporto", "carta d'identità", "patente"];
 // https://www.tutorialsteacher.com/typescript/typescript-void
 // https://www.tutorialsteacher.com/typescript/typescript-never
 
-export { name, surname, age, male, documents }
+export { name, surname, age, male, documents };
