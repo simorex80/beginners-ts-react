@@ -6,14 +6,14 @@ interface User {
     surname: string,
     age?: number,
     enabled: boolean,
-}
+};
 
 const user: User = {
     id: 53156,
     name: "Simone",
     surname: "Di Luzio",
     enabled: true,
-}
+};
 
 console.log(`utility-types::user: ${JSON.stringify(user)}`);
 
@@ -32,7 +32,7 @@ const userWithoutId: UserWithoutId = {
     name: "Mario",
     surname: "Bianchi",
     enabled: true
-}
+};
 
 userWithoutId.age = 24;
 
@@ -45,7 +45,7 @@ type PartialUser = Partial<User>;
 const partialUser: PartialUser = {
     name: "Paolo",
     surname: "Rossi",
-}
+};
 
 partialUser.age = 31;
 
@@ -61,7 +61,7 @@ const requiredUser: RequiredUser = {
     surname: "Neri",
     age: 42,
     enabled: true,
-}
+};
 
 console.log(`utility-types::requiredUser: ${JSON.stringify(requiredUser)}`);
 
@@ -74,10 +74,10 @@ const readonlyUser: ReadonlyUser = {
     name: "Gianni",
     surname: "Celeste",
     enabled: true,
-}
+};
 
 // readonlyUser.age = 22; <- DISALLOWED
 
 console.log(`utility-types::readonlyUser: ${JSON.stringify(readonlyUser)}`);
 
-export type { User }
+export type { User };

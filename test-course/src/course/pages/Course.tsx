@@ -10,7 +10,6 @@ import Event from 'course/react/components/events/Event';
 import CustomHook from 'course/react/components/events/CustomHook';
 import Controlled from 'course/react/form/Controlled';
 import Uncontrolled from 'course/react/form/Uncontrolled';
-import ForwardRef from 'course/react/forward-ref/ForwardRef';
 
 const Course = () => {
 
@@ -51,11 +50,6 @@ const Course = () => {
                 <Controlled />
                 <h2>Uncontrolled</h2>
                 <Uncontrolled />
-            </div>
-            <div>
-                <h1>Ref</h1>
-                <h2>ForwardRef</h2>
-                <ForwardRef />
             </div>
             <br />
         </div>

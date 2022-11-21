@@ -6,15 +6,15 @@
 
 import { DependencyList, useEffect } from "react";
 
-function useEventListener(type: string, callback: (event: Event) => any, deps?: DependencyList) {
+function useEventListener(event_type: string, event_callback: (event: Event) => any, deps?: DependencyList) {
 
     /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
-        window.addEventListener(type, callback);
+        window.addEventListener(event_type, event_callback);
         return () => {
-            window.removeEventListener(type, callback);
+            window.removeEventListener(event_type, event_callback);
         };
-    }, [type, callback, ...(deps ? deps : [])]);
+    }, [event_type, event_callback, ...(deps ? deps : [])]);
     /* eslint-enable react-hooks/exhaustive-deps */
 
 }

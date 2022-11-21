@@ -10,15 +10,12 @@ import SubComponentB from "course/react/components/hooks/Context/SubComponentB";
 import SubComponentC from "course/react/components/hooks/Context/SubComponentC";
 
 interface ColorContextProps {
-    foreground: string;
-    background: string;
+    foreground?: string;
+    background?: string;
 };
 
 // A. CREATING THE CONTEXT
-export const ColorContext = React.createContext<ColorContextProps>({
-    foreground: "#FFFFFF",
-    background: "#000000"
-});
+export const ColorContext = React.createContext<ColorContextProps>({});
 
 const getRandomColor = () => {
     return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -28,10 +25,7 @@ function Context() {
 
     console.log(`hooks:context::re-render`);
 
-    const [colorContextProps, setColorContextProps] = useState<ColorContextProps>({
-        foreground: getRandomColor(),
-        background: getRandomColor()
-    });
+    const [colorContextProps, setColorContextProps] = useState<ColorContextProps>({});
 
     const handleChangeColor = () => {
         setColorContextProps({

@@ -23,5 +23,5 @@ const component: ComponentProps = {
 
 console.log(`functions::component.sum: ${component.sum()}`);
 
-export { sum, component };
+export { component };
 export type { ComponentProps };

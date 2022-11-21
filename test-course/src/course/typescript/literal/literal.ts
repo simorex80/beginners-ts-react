@@ -2,16 +2,16 @@
 
 // https://www.typescripttutorial.net/typescript-tutorial/typescript-string-literal-types/
 
-type Position = "top" | "bottom" | "left" | "right";
-type FirstTenNumbers = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
-type Height = "-150cm" | "-151-170cm" | 100;
+type PositionLiteral = "top" | "bottom" | "left" | "right";
+type FirstTenNumbersLiteral = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+type HeightLiteral = "-150cm" | "151-170cm" | 100;
 
-const position: Position = "top";
-const number: FirstTenNumbers = 10;
-const height: Height = 100;
+const position: PositionLiteral = "top";
+const number: FirstTenNumbersLiteral = 10;
+const height: HeightLiteral = 100;
 
 interface Square {
-    position: Position;
+    position: PositionLiteral;
 }
 
 const square: Square = {
@@ -19,4 +19,4 @@ const square: Square = {
 };
 
 export { position, number, height, square };
-export type { Position, FirstTenNumbers, Height, Square };
+export type { PositionLiteral, FirstTenNumbersLiteral, HeightLiteral, Square };
