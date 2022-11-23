@@ -4,10 +4,13 @@
 
 interface HelloProps {
     user?: string;
+    surname?: string;
 }
 
 function Hello(props: HelloProps) {
-    return <p>Hello {props.user ? props.user : "John Doe"}</p>;
+    return <p>
+        Hello {props.user ? props.user : "John"} {props.surname ? props.surname : "Doe"}
+    </p>;
 }
 
 export default Hello;

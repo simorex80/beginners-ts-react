@@ -37,11 +37,9 @@ const simpleUser1: SimpleUser = {
 
 // Optional property 
 
-// console.log(objects::simpleUser1.address ? simpleUser1.address.number : "");
-// console.log(objects::simpleUser1.address && simpleUser1.address.number);
+console.log(`objects::simpleUser1.address?.number: ${simpleUser1.address ? simpleUser1.address.number : ""}`);
+console.log(`objects::simpleUser1.address?.number: ${simpleUser1.address && simpleUser1.address.number}`);
 console.log(`objects::simpleUser1.address?.number: ${simpleUser1.address?.number}`);
-const address_number = simpleUser1.address && simpleUser1.address.number;
-console.log(`objects::simpleUser1.address?.number: ${address_number}`);
 
 // https://www.typescriptlang.org/docs/handbook/2/objects.html
 

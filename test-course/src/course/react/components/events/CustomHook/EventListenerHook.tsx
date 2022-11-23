@@ -6,7 +6,11 @@
 
 import { DependencyList, useEffect } from "react";
 
-function useEventListener(event_type: string, event_callback: (event: Event) => any, deps?: DependencyList) {
+function useEventListener(
+    event_type: string,
+    event_callback: (event: Event) => any
+    // , deps?: DependencyList
+) {
 
     /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
@@ -14,7 +18,11 @@ function useEventListener(event_type: string, event_callback: (event: Event) => 
         return () => {
             window.removeEventListener(event_type, event_callback);
         };
-    }, [event_type, event_callback, ...(deps ? deps : [])]);
+    }, [
+        event_type,
+        event_callback
+        // , ...(deps ? deps : [])
+    ]);
     /* eslint-enable react-hooks/exhaustive-deps */
 
 }

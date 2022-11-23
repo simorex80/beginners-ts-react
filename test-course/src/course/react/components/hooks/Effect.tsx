@@ -60,19 +60,21 @@ function Effect() {
                 Search
             </button>
 
-            <ul className="App-list">
-                {data && data.hits && data.hits.slice(0, 5).map(item => (item.title &&
-                    <li key={item.objectID}>
-                        <a
-                            className="App-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={item.url}>
-                            {item.title}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+            {data && data.hits &&
+                <ul className="App-list">
+                    {data.hits.slice(0, 5).map(item => (item.title &&
+                        <li key={item.objectID}>
+                            <a
+                                className="App-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href={item.url}>
+                                {item.title}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            }
         </div >
     );
 }

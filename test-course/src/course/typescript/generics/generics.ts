@@ -1,5 +1,8 @@
 // https://www.typescriptlang.org/docs/handbook/2/generics.html
 
+// FE extended example
+// https://gitlab.crif-inventia-de-shared.inventiacloud.it/product/phygital/phygital-frontend/-/blob/release/core/api/src/calls/Call.ts
+
 // https://www.tutorialsteacher.com/typescript/typescript-generic
 // https://www.tutorialsteacher.com/typescript/typescript-generic-interface
 // https://en.wikipedia.org/wiki/Generic_programming
@@ -33,7 +36,7 @@ const stringBox: Box<string> = {
 };
 
 const arrayNumberBox: Box<Array<number>> = {
-    content: [100],
+    content: [100, 101],
 };
 
 console.log(`generics::numberBox: ${JSON.stringify(numberBox)}`);
@@ -50,6 +53,10 @@ interface User {
     name: string;
 }
 
+interface User2 extends User {
+    surname: string;
+}
+
 const userSuperBox1: SuperBox<User, string> = {
     content: {
         name: "Simone"
@@ -57,9 +64,10 @@ const userSuperBox1: SuperBox<User, string> = {
     attribute: "Yellow"
 };
 
-const userSuperBox2: SuperBox<User, number> = {
+const userSuperBox2: SuperBox<User2, number> = {
     content: {
-        name: "Mario"
+        name: "Mario",
+        surname: "Rossi"
     },
     attribute: 100
 };
